@@ -42,3 +42,10 @@ library requirement: pip install flask
   <br>
 **/dangdienra : <br>-crawl dữ liệu, xử lí dữ liệu, xây dựng mô hình ,web app cho dự đoán trận đấu đang diễn ra train thế giới <br>
              - run app.py để ra giao diện**
+Website dự đoán EPL:
+![441516568_1674353596734939_8239652363831961335_n](https://github.com/hoanghelloworld/Match-Football-Prediction-IAI/assets/144087649/598b7fcc-982a-40ac-9664-87df93caf1b2)
+![445602780_853621039942103_6658913460451740549_n](https://github.com/hoanghelloworld/Match-Football-Prediction-IAI/assets/144087649/0e05a535-9aaa-4dfa-80d2-3b4fb331a0d0)
+![441624616_306776822485431_5709457883659885935_n](https://github.com/hoanghelloworld/Match-Football-Prediction-IAI/assets/144087649/bdcaf379-868d-4d23-b8eb-1c97911d246e)
+Website dự đoán trận đấu đang diễn ra trên toàn thế giới:
+![441586342_387417526977123_6348511445702210042_n](https://github.com/hoanghelloworld/Match-Football-Prediction-IAI/assets/144087649/2c83b9dc-5202-4917-ac4a-49f64ba8c848)
+
