@@ -1,0 +1,143 @@
+body{
+    background-image: url('images/bg2.jpg');
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    color:aqua;
+}
+
+header{
+    text-align: center;
+    color: aqua;
+    font-size: 1.5rem;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.title {
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.nav1 {
+    width: 600px;
+}
+.nav2 {
+    width: 200px;
+}
+.nav3 {
+    width: 600px;
+}
+
+nav table {
+    width: 50%; 
+    border-collapse: collapse;
+}
+
+nav td {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    background-color: #333;
+}
+
+nav td a {
+    text-decoration: none; 
+    color: aqua; 
+    display: block; 
+    text-align: center;
+}
+
+nav td:hover {
+    background-color: #f0f0f0;
+}
+
+.selected-btn {
+    background-color: #007bff;
+    color: #fff; 
+}
+
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 28px;
+    margin: 0 28px;
+}
+
+.box1 {
+    display: flex;
+    margin: 10px;
+}
+
+.hometeam{
+    justify-content: space-between;
+}
+
+.awayteam{
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 5px;
+    border:none;
+    border-radius: 20px;
+    color: aqua;
+    background: rgba(18, 18, 18);
+}
+
+.form-submit-btn input:hover{
+    background: rgba(24, 221, 83, 0.5);
+    color: rgba(48, 219, 122, 0.5);
+}
+
+.result-box {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: #9c9898;
+    border-radius: 50%;
+    text-align: center; /* Căn giữa văn bản */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: black 2px solid;
+} 
+.result-box img{
+    width: 100px;
+    height: 100px;
+}

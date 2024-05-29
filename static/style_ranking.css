@@ -1,0 +1,89 @@
+body{
+    background-image: url('images/bg2.jpg');
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+}
+
+header{
+    text-align: center;
+    color: aqua;
+    font-size: 1.5rem;
+}
+
+.title {
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.nav1 {
+    width: 600px;
+}
+.nav2 {
+    width: 200px;
+}
+.nav3 {
+    width: 600px;
+}
+
+nav table {
+    width: 50%; 
+    border-collapse: collapse;
+}
+
+nav td {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    background-color: #333;
+}
+
+nav td a {
+    text-decoration: none; 
+    color: aqua; 
+    display: block; 
+    text-align: center;
+}
+
+nav td:hover {
+    background-color: #f0f0f0;
+}
+
+.selected-btn {
+    background-color: #007bff;
+    color: #fff; 
+}
+
+.scroll-container {
+    width: 50%;
+    height: 400px; /* Chiều cao của vùng cuộn */
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    margin: 40px auto; /* Căn giữa */
+}
+.ranking-image {
+    width: 100%;
+    display: block;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MACHINE LEARNING PREDICTION EPL</title>
+        <meta charset="utf-f8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_underway.css') }}">
+
+    </head>
+    <body>
+        <header>
+            <h1>FOOTBALL PREDICTION</h1>
+        </header>
+        <nav>
+            <table class="nav1">
+                <tr>
+                    <td class="nav1"><a href="#">The match is underway</a></td>
+                    <td class="nav2"><a href="{{ url_for('ranking')}}">RANKING</a></td>
+                    <td class="nav3"><a href="{{ url_for('home') }}">The match hasn't occurred</a></td>
+                </tr>
+            </table>
+        </nav>
+        <main>
+            <div class="container">
+                <form action="{{ url_for('predict') }}" method="post" class="form">
+                    <div class="api">
+                        <button>AUTOMATICALLY ENTER PARAMETERS</button>
+                    </div>
+                    <div class="box1">
+                        <div class="hometeam">
+                            <label for="hometeam">Home Team</label>
+                            <select name="hometeam" id="hometeam" required>
+                                <option value="" disabled selected>HOME</option>
+                                {% for team in teams %}
+                                    <option value="{{ team }}">{{ team }}</option>
+                                {% endfor %}
+                            </select>        
+                        </div>
+                        <label for="ht_home">Half Time Home Goals:</label>
+                        <input type="number" id="ht_home" name="ht_home" required><br>
+
+                        <label for="ht_away">Half Time Away Goals:</label>
+                        <input type="number" id="ht_away" name="ht_away" required><br>
+
+                        <label for="ft_home">Home Team Free Kicks:</label>
+                        <input type="number" id="ft_home" name="ft_home" required><br>
+
+                        <label for="ft_away">Away Team Free Kicks:</label>
+                        <input type="number" id="ft_away" name="ft_away" required><br>
+
+                        <label for="hs">Home Team Shots:</label>
+                        <input type="number" id="hs" name="hs" required><br>
+
+                        <label for="as">Away Team Shots:</label>
+                        <input type="number" id="as" name="as" required><br>
+
+                        <label for="hst">Home Team Shots on Target:</label>
+                        <input type="number" id="hst" name="hst" required><br>
+
+                        <label for="ast">Away Team Shots on Target:</label>
+                        <input type="number" id="ast" name="ast" required><br>
+                    </div>
+
+                    <div class="box2">
+                        <div class="awayteam">
+                            <label for="awayteam" >Away Team</label>
+                            <select name="awayteam" id="awayteam" required>
+                                <option value="" disabled selected>AWAY</option>
+                                {% for team in teams %}
+                                    <option value="{{ team }}">{{ team }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <label for="hc">Home Team Corners:</label>
+                        <input type="number" id="hc" name="hc" required><br>
+
+                        <label for="ac">Away Team Corners:</label>
+                        <input type="number" id="ac" name="ac" required><br>
+
+                        <label for="hf">Home Team Fouls:</label>
+                        <input type="number" id="hf" name="hf" required><br>
+
+                        <label for="af">Away Team Fouls:</label>
+                        <input type="number" id="af" name="af" required><br>
+
+                        <label for="hy">Home Team Yellow Cards:</label>
+                        <input type="number" id="hy" name="hy" required><br>
+
+                        <label for="ay">Away Team Yellow Cards:</label>
+                        <input type="number" id="ay" name="ay" required><br>
+
+                        <label for="hr">Home Team Red Cards:</label>
+                        <input type="number" id="hr" name="hr" required><br>
+
+                        <label for="ar">Away Team Red Cards:</label>
+                        <input type="number" id="ar" name="ar" required><br>
+                    </div>
+                    
+
+                </form>
+                <div class="box3">
+                    <div class="result-box" id="result"></div>
+
+                    <div class="form-submit-btn">
+                        <input type="submit" id="submitBtn" value="Predict">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="{{ url_for('static', filename='script_underway.js') }}"></script>
+    </body>
+    <h1 class="title">THE MATCH IS UNDERWAY</h1>
+</html>

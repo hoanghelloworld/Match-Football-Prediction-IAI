@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MACHINE LEARNING PREDICTION EPL</title>
+        <meta charset="utf-f8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style_ranking.css') }}">
+
+    </head>
+    <body>
+        <header>
+            <h1>FOOTBALL PREDICTION</h1>
+        </header>
+        <nav>
+            <table class="nav1">
+                <tr>
+                    <td class="nav1"><a href="{{ url_for('underway')}}">The match is underway</a></td>
+                    <td class="nav2"><a href="#">RANKING</a></td>
+                    <td class="nav3"><a href="{{ url_for('home') }}">The match hasn't occurred</a></td>
+                </tr>
+            </table>
+        </nav>
+        <div class="scroll-container">
+            <img src="{{ url_for('static', filename='images/ranking1.png') }}" alt="Ranking Image 1" class="ranking-image">
+            <img src="{{ url_for('static', filename='images/ranking2.png') }}" alt="Ranking Image 2" class="ranking-image">
+        </div>
+
+    </body>
+    <h1 class="title">RANKING</h1>
+</html>
